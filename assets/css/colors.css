@@ -1,0 +1,151 @@
+/* === DiScEPT CSS Theme === */
+
+:root {
+  /* Color Palette Variables */
+  --primary: #4a87b5;      /* C75 M40 Y10 */
+  --secondary: #5d96c2;    /* C65 M30 Y5 */
+  --tertiary: #3f709e;     /* C85 M55 Y15 */
+  --accent: #005b78;       /* C100 M55 Y25 K10 */
+  --deep: #2c5d6b;         /* C75 M55 Y25 K10 */
+  --light: #88c4bb;        /* C50 M10 Y30 */
+  --muted: #548b8b;        /* C65 M25 Y30 K10 */
+  --soft: #66a6b3;         /* C65 M25 Y30 */
+
+  --text: #2c2c2c;
+  --background: #ffffff;
+  --background-alt: #f8f9fa;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header, .navbar {
+  background-color: var(--background);
+  border-bottom: 2px solid var(--light);
+}
+
+.navbar .nav-link {
+  color: var(--deep);
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-item.active .nav-link {
+  color: var(--primary);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--tertiary);
+}
+
+.btn-secondary {
+  background-color: var(--muted);
+  color: #fff;
+}
+
+/* Titles and Dividers */
+.title-section {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent);
+  margin: 16px 0;
+}
+
+/* Cards */
+.card-blog, .card-service {
+  background-color: var(--background-alt);
+  border: 1px solid var(--soft);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 91, 120, 0.1);
+}
+
+.card-blog .post-title a,
+.card-service h5 {
+  color: var(--deep);
+}
+
+.card-blog .post-date,
+.card-service p {
+  color: var(--muted);
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  border: 1px solid var(--soft);
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+label {
+  font-weight: 600;
+  color: var(--deep);
+}
+
+/* Footer */
+footer.page-footer {
+  background-color: var(--deep);
+  color: #fff;
+  padding: 2rem 0;
+}
+
+footer.page-footer a {
+  color: var(--light);
+}
+
+footer.page-footer a:hover {
+  color: var(--primary);
+}
+
+/* Utilities */
+.bg-primary { background-color: var(--primary); }
+.bg-light { background-color: var(--light); }
+.bg-muted { background-color: var(--muted); }
+.text-primary { color: var(--primary); }
+.text-deep { color: var(--deep); }
+.text-muted { color: var(--muted); }
+
+.shadow-soft {
+  box-shadow: 0 4px 10px rgba(0, 91, 120, 0.2);
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: var(--primary);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
