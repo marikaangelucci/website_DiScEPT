@@ -19,14 +19,14 @@
 body {
   font-family: 'Book Antiqua', sans-serif;  
   background-color: var(--background);
-  color: var(--text);
+  color: var(--#fff);
   line-height: 1.6;
 }
 
 /* Header and Navigation */
 header, .navbar {
   background-color: var(--background);
-  border-bottom: 2px solid var(--background);
+  border-bottom: 1px solid var(--secondary);
 }
 
 .navbar .nav-link {
@@ -36,18 +36,18 @@ header, .navbar {
 
 .navbar .nav-link:hover,
 .navbar .nav-item.active .nav-link {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 /* Buttons */
 .btn-primary {
-  background-color: var(--primary);
+  background-color: var(--tertiary);
   border: none;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: var(--tertiary);
+  background-color: var(--soft);
 }
 
 .btn-secondary {
@@ -72,7 +72,7 @@ header, .navbar {
 /* Cards */
 .card-blog, .card-service {
   background-color: var(--background-alt);
-  border: 1px solid var(--soft);
+  border: 1px solid var(--primary);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 91, 120, 0.1);
@@ -85,7 +85,7 @@ header, .navbar {
 
 .card-blog .post-date,
 .card-service p {
-  color: var(--muted);
+  color: var(--primary);
 }
 
 /* Forms */
@@ -114,17 +114,17 @@ label {
 
 /* Footer */
 footer.page-footer {
-  background-color: var(--deep);
+  background-color: var(--accent);
   color: #fff;
   padding: 2rem 0;
 }
 
 footer.page-footer a {
-  color: var(--light);
+  color: var(--background);
 }
 
 footer.page-footer a:hover {
-  color: var(--primary);
+  color: var(--soft);
 }
 
 /* Utilities */
@@ -148,4 +148,33 @@ footer.page-footer a:hover {
   background-color: var(--primary);
   border-color: var(--primary);
   color: #fff;
+}
+
+/* Social Media Buttons */
+.social-media-button {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-button a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.social-media-button a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--deep);
+  font-size: 20px;
+}
+
+.social-media-button a:hover {
+  background-color: var(--soft);
 }
