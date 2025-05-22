@@ -25,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.mai-logo-zotero:before {
+  content: "\5a";
+}
+
 .mai-add:before {
   content: "\e900";
 }
