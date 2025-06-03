@@ -81,47 +81,67 @@ body {
 /* ========================================
    CARDS STYLES
    ======================================== */
-.card-service {
-  background: white;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #e9ecef;
-}
+.cards-section {
+      padding: 4rem 0;
+    }
 
-.card-service:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-}
+    .card-service {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #e9ecef;
+    }
 
-.card-service h4 {
-  color: #6c757d;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
+    .card-service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
 
-.card-service p {
-  margin-bottom: 1.5rem;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: justify;
-  line-height: 1.6;
-}
+    .card-service .body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
 
-.card-service ul {
-  margin-top: 0.5rem;
-  padding-left: 1.2rem;
-}
+    .card-service h4 {
+      color: #6c757d;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
 
-.card-service ul li {
-  margin-bottom: 0.3rem;
-  font-weight: 500;
-  text-align: left;
+    .card-service p {
+      margin-bottom: 1.5rem;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+
+    .card-service ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+      list-style-type: disc;
+    }
+
+    .card-service ul li {
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+      text-align: left;
+    }
+
+    .divider {
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(90deg, #007bff, #0056b3);
+      margin: 1rem 0;
+      border-radius: 2px;
 }
 
 
